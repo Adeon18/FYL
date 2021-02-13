@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d3fa5b3fb0e430ca7d3e4f74c05f163 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2d3fa5b3fb0e430ca7d3e4f74c05f163" ></div>
+        
+</body>
+<script>    
+    
+            var map_2d3fa5b3fb0e430ca7d3e4f74c05f163 = L.map(
+                "map_2d3fa5b3fb0e430ca7d3e4f74c05f163",
+                {
+                    center: [40.712776, -74.005974],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34a87d3fc76d47f9a7897a4a4a7603e0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d3fa5b3fb0e430ca7d3e4f74c05f163);
+        
+    
+            var feature_group_4787634c441249d5864733253405761b = L.featureGroup(
+                {}
+            ).addTo(map_2d3fa5b3fb0e430ca7d3e4f74c05f163);
+        
+    
+            var circle_marker_b4663b58e2a1411c9bd3d4343f31fd60 = L.circleMarker(
+                [40.712776, -74.005974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_4787634c441249d5864733253405761b);
+        
+    
+        var popup_c6b88b278471492087fbbc4832f591b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea1c6d8e0d054061a3f5869d2fc94c95 = $(`<div id="html_ea1c6d8e0d054061a3f5869d2fc94c95" style="width: 100.0%; height: 100.0%;">Your set location</div>`)[0];
+            popup_c6b88b278471492087fbbc4832f591b7.setContent(html_ea1c6d8e0d054061a3f5869d2fc94c95);
+        
+
+        circle_marker_b4663b58e2a1411c9bd3d4343f31fd60.bindPopup(popup_c6b88b278471492087fbbc4832f591b7)
+        ;
+
+        
+    
+    
+            var feature_group_a5d10f7c9cc349ac96a2b95e8b67319d = L.featureGroup(
+                {}
+            ).addTo(map_2d3fa5b3fb0e430ca7d3e4f74c05f163);
+        
+    
+            var marker_c467e5680db14587b5dadabd4a14baad = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_08b652286c0f4606a7d59ecbe10d3953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c467e5680db14587b5dadabd4a14baad.setIcon(icon_08b652286c0f4606a7d59ecbe10d3953);
+        
+    
+        var popup_f88f646b707d48eaaafc3b8567498783 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fce307cca2b34aa4af5b214a4ae44b35 = $(`<div id="html_fce307cca2b34aa4af5b214a4ae44b35" style="width: 100.0%; height: 100.0%;">"10 Great Reasons" (2008)</div>`)[0];
+            popup_f88f646b707d48eaaafc3b8567498783.setContent(html_fce307cca2b34aa4af5b214a4ae44b35);
+        
+
+        marker_c467e5680db14587b5dadabd4a14baad.bindPopup(popup_f88f646b707d48eaaafc3b8567498783)
+        ;
+
+        
+    
+    
+            var marker_ffb146898f954a0995854607a416981e = L.marker(
+                [22.5000485, -100.0000375],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_0e346d79bb6b4782bd2f8f01d6f0ac29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffb146898f954a0995854607a416981e.setIcon(icon_0e346d79bb6b4782bd2f8f01d6f0ac29);
+        
+    
+        var popup_36785696788f4fa29606f88385cc9bc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8b1cce7b52e4d06b26c6ed05f14feda = $(`<div id="html_c8b1cce7b52e4d06b26c6ed05f14feda" style="width: 100.0%; height: 100.0%;">"...De ra�z luna" (2008)</div>`)[0];
+            popup_36785696788f4fa29606f88385cc9bc6.setContent(html_c8b1cce7b52e4d06b26c6ed05f14feda);
+        
+
+        marker_ffb146898f954a0995854607a416981e.bindPopup(popup_36785696788f4fa29606f88385cc9bc6)
+        ;
+
+        
+    
+    
+            var marker_18fd5f2a73be4893947cdb259b058f8a = L.marker(
+                [33.9708782, -118.0308396],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_d317328bb0a144839f0aca205feca33d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18fd5f2a73be4893947cdb259b058f8a.setIcon(icon_d317328bb0a144839f0aca205feca33d);
+        
+    
+        var popup_58f0cad22d84417abb1aee76ae916cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6eab4584019449f993a682a180c2ca6 = $(`<div id="html_a6eab4584019449f993a682a180c2ca6" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Death Penalties (#5.6)}</div>`)[0];
+            popup_58f0cad22d84417abb1aee76ae916cb0.setContent(html_a6eab4584019449f993a682a180c2ca6);
+        
+
+        marker_18fd5f2a73be4893947cdb259b058f8a.bindPopup(popup_58f0cad22d84417abb1aee76ae916cb0)
+        ;
+
+        
+    
+    
+            var marker_a848ef841e5e4f00bfb876be1e03e2ee = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_a173b0bd82d94d768bfe1d47b8e6109b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a848ef841e5e4f00bfb876be1e03e2ee.setIcon(icon_a173b0bd82d94d768bfe1d47b8e6109b);
+        
+    
+        var popup_67370d0e2fb644c5a320f5ab82304cd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b20587b50484fee83f5fc50cb32dd58 = $(`<div id="html_9b20587b50484fee83f5fc50cb32dd58" style="width: 100.0%; height: 100.0%;">"10 Great Reasons" (2008)</div>`)[0];
+            popup_67370d0e2fb644c5a320f5ab82304cd3.setContent(html_9b20587b50484fee83f5fc50cb32dd58);
+        
+
+        marker_a848ef841e5e4f00bfb876be1e03e2ee.bindPopup(popup_67370d0e2fb644c5a320f5ab82304cd3)
+        ;
+
+        
+    
+    
+            var marker_bcc4726ef34e4d8f98be42219c650c38 = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_43b1334d612d4dad91fcff0edbd0f853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcc4726ef34e4d8f98be42219c650c38.setIcon(icon_43b1334d612d4dad91fcff0edbd0f853);
+        
+    
+        var popup_763b7822e7624cc58cd0102abaf62a27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336583cd9df746d987d60a68e3f0611f = $(`<div id="html_336583cd9df746d987d60a68e3f0611f" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Come on Get Deathy (#2.7)}</div>`)[0];
+            popup_763b7822e7624cc58cd0102abaf62a27.setContent(html_336583cd9df746d987d60a68e3f0611f);
+        
+
+        marker_bcc4726ef34e4d8f98be42219c650c38.bindPopup(popup_763b7822e7624cc58cd0102abaf62a27)
+        ;
+
+        
+    
+    
+            var marker_c71ab0b369d84b6c84652ba880d3367e = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_fa563f6b1e7f48dbb249d89a24ac830f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c71ab0b369d84b6c84652ba880d3367e.setIcon(icon_fa563f6b1e7f48dbb249d89a24ac830f);
+        
+    
+        var popup_183c0b12cabd46f884201115ac96c609 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04b8cfd85a454a02b474278005a17d45 = $(`<div id="html_04b8cfd85a454a02b474278005a17d45" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Dead Before They Know It (#4.7)}</div>`)[0];
+            popup_183c0b12cabd46f884201115ac96c609.setContent(html_04b8cfd85a454a02b474278005a17d45);
+        
+
+        marker_c71ab0b369d84b6c84652ba880d3367e.bindPopup(popup_183c0b12cabd46f884201115ac96c609)
+        ;
+
+        
+    
+    
+            var marker_6e200f8638a1450fb5288bff1f2b28a6 = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_21fbc898195f4946abfafe035ccd56b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e200f8638a1450fb5288bff1f2b28a6.setIcon(icon_21fbc898195f4946abfafe035ccd56b6);
+        
+    
+        var popup_87bfab47da844b14a1bed323b2ecdff3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c3c210889f849cdb707011876665e96 = $(`<div id="html_1c3c210889f849cdb707011876665e96" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Dead to Rights (#2.11)}</div>`)[0];
+            popup_87bfab47da844b14a1bed323b2ecdff3.setContent(html_1c3c210889f849cdb707011876665e96);
+        
+
+        marker_6e200f8638a1450fb5288bff1f2b28a6.bindPopup(popup_87bfab47da844b14a1bed323b2ecdff3)
+        ;
+
+        
+    
+    
+            var marker_6c9dce865cf54537b0fe1cd91039a45b = L.marker(
+                [34.0536909, -118.242766],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_bba7ec5c3f41404e951f4c6f00dcbe34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c9dce865cf54537b0fe1cd91039a45b.setIcon(icon_bba7ec5c3f41404e951f4c6f00dcbe34);
+        
+    
+        var popup_cb371d4689334d85b69cb9d8ddf10d83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b685e9a55824e4bbc9bd3e6341d91cf = $(`<div id="html_4b685e9a55824e4bbc9bd3e6341d91cf" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {I See Dead People (And They're Cracking Me Up) (#1.12)}</div>`)[0];
+            popup_cb371d4689334d85b69cb9d8ddf10d83.setContent(html_4b685e9a55824e4bbc9bd3e6341d91cf);
+        
+
+        marker_6c9dce865cf54537b0fe1cd91039a45b.bindPopup(popup_cb371d4689334d85b69cb9d8ddf10d83)
+        ;
+
+        
+    
+    
+            var marker_5bf83921d606413688c33cb08b99e5fe = L.marker(
+                [33.9827043, -118.2120343],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_a73d7e6e9d264e90b284ba4b25c216df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bf83921d606413688c33cb08b99e5fe.setIcon(icon_a73d7e6e9d264e90b284ba4b25c216df);
+        
+    
+        var popup_e223387a0dac4eca9b8cae8312531c5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa7d59d7d9fc46509d70adebe136f7e8 = $(`<div id="html_aa7d59d7d9fc46509d70adebe136f7e8" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Come on Get Deathy (#2.7)}</div>`)[0];
+            popup_e223387a0dac4eca9b8cae8312531c5b.setContent(html_aa7d59d7d9fc46509d70adebe136f7e8);
+        
+
+        marker_5bf83921d606413688c33cb08b99e5fe.bindPopup(popup_e223387a0dac4eca9b8cae8312531c5b)
+        ;
+
+        
+    
+    
+            var marker_e7a915a50ed044adb1bb35ad03d6eaf2 = L.marker(
+                [34.1816482, -118.3258554],
+                {}
+            ).addTo(feature_group_a5d10f7c9cc349ac96a2b95e8b67319d);
+        
+    
+            var icon_2e19ab3b5e7b4cb29aa0f73344599140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7a915a50ed044adb1bb35ad03d6eaf2.setIcon(icon_2e19ab3b5e7b4cb29aa0f73344599140);
+        
+    
+        var popup_4f8a82a5f71a4125954f8575b0f9f001 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b3479e7c57d410c91b20377dbadfaf6 = $(`<div id="html_2b3479e7c57d410c91b20377dbadfaf6" style="width: 100.0%; height: 100.0%;">"1000 Ways to Die" (2008) {Stench of Death}</div>`)[0];
+            popup_4f8a82a5f71a4125954f8575b0f9f001.setContent(html_2b3479e7c57d410c91b20377dbadfaf6);
+        
+
+        marker_e7a915a50ed044adb1bb35ad03d6eaf2.bindPopup(popup_4f8a82a5f71a4125954f8575b0f9f001)
+        ;
+
+        
+    
+    
+            var layer_control_9541c1c73e0f47a6ad4ff343117c1462 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_34a87d3fc76d47f9a7897a4a4a7603e0,
+                },
+                overlays :  {
+                    "User" : feature_group_4787634c441249d5864733253405761b,
+                    "Locations" : feature_group_a5d10f7c9cc349ac96a2b95e8b67319d,
+                },
+            };
+            L.control.layers(
+                layer_control_9541c1c73e0f47a6ad4ff343117c1462.base_layers,
+                layer_control_9541c1c73e0f47a6ad4ff343117c1462.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2d3fa5b3fb0e430ca7d3e4f74c05f163);
+        
+</script>
