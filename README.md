@@ -18,7 +18,7 @@ pip install requirements.txt
 
 ## Usage
 
-The program asks you for the year you want the movies to be, your location(**MUST BE A VALID LOCATION**) and if you want to prioritise speed or precision. Speed calculates everything **under 2 minutes** under all circumstances but works with **presition to the country**. Precision can work **incredibly long** depending on the amount of data but works with **presition as exact as possible**. You also always get the **progress bar** so you can see if the option chosen is right. By default it works with only **1000** movies in _short.list_, you can change it to 1500000(_locations.list_) movies in manager.py. 
+The program asks you for the year you want the movies to be, your location(**MUST BE A VALID LOCATION**) and if you want to prioritise _speed_ or _precision_. _speed_ calculates everything **under 2 minutes** under all circumstances but works with **presition to the country**. _precision_ can work **incredibly long** depending on the amount of data but works **as exact as possible**. You also always get the **progress bar** so you can see if the option chosen is right. By default it works with only **1000** movies in _short.list_, you can change it to **1500000**(_locations.list_) movies in manager.py. 
 
 ```bash
 python FYL_modules/main.py
@@ -38,6 +38,13 @@ Finished, look at 2015_movies_map.html
 ```
 
 ![MAP](Example.png)
+
+## Additional info
+
+The HTML map is generated in the same folder, where the script is run. It consists of 3 layers:
+* The main layer(map)
+* The marker layer(all the markers)
+* The population layer(Colors contries depending on population, idk why I added this)
 
 ## License
 
