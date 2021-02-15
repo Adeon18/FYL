@@ -37,7 +37,7 @@ Sorted in 0.0 sec
 Finished, look at 2015_movies_map.html
 ```
 
-![MAP](https://github.com/Adeon18/FYL/Example.png)
+![MAP](Example.png)
 
 ## License
 
