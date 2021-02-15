@@ -1,4 +1,9 @@
+'''
+Module for managing all the calculations regarding distance and coordinates.
+Also optimisation is here
+'''
 import time
+import sys
 import random
 import haversine
 import progressbar
@@ -42,7 +47,17 @@ def find_all_movies(year: int) -> tuple:
 
 
 def sort_by_country(user_pos: tuple, movies: tuple) -> tuple:
+    '''
+    Sorts by contry for speed purposes. Is not used for precision.
 
+    Args:
+        user_pos: User coordinates
+        movies: movie list from find_all_movies
+    
+    Returns:
+        needed_movies: A list with elements like: (Name, Location) of right
+            country movies
+    '''
     geolocator = Nominatim(user_agent="FYL")
     position = str(user_pos[0]) + ', ' + str(user_pos[1])
     location = geolocator.reverse(position, language='en')
@@ -61,7 +76,11 @@ def sort_by_country(user_pos: tuple, movies: tuple) -> tuple:
             needed_movies.append(movie)
     
     while len(needed_movies) < 11:
-        needed_movies.append(movies[random.randrange(0, len(movies))])
+        try:
+            needed_movies.append(movies[random.randrange(0, len(movies))])
+        except ValueError:
+            print("Please enter a valid year", flush=1)
+            sys.exit()
     
     while len(needed_movies) > 400:
         needed_movies = random.choice([needed_movies[:len(needed_movies)//2],
@@ -75,7 +94,7 @@ def find_coords(movies: tuple, opt: str) -> tuple:
     Gets the coords from a movie location
 
     Args:
-        movies: The movie list returned from find_all_movies
+        movies: The movie list returned from find_all_movies or sort_by_country
         opt: Presition parameter
     
     Returns:
@@ -127,9 +146,16 @@ def find_coords(movies: tuple, opt: str) -> tuple:
     return tuple(movies_coords)
 
 
-def find_distance(user_position: tuple, places: tuple):
+def find_distance(user_position: tuple, places: tuple) -> list:
     '''
-    Find distance between user coordinates and a given place
+    Find distance between user coordinates and a given place.
+
+    Args:
+        user_position: User coordinates
+        places: movie list from find_coords
+    
+    Returns:
+        distances: list with (Name, distance, coordinates) as elements
     '''
     print('Finding distance..', flush=True)
     start = time.time()
@@ -144,7 +170,16 @@ def find_distance(user_position: tuple, places: tuple):
     return distances
 
 
-def sort_distances(movies: tuple) -> tuple:
+def sort_distances(movies: tuple) -> list:
+    '''
+    Sorts the distances to get the best 10.
+    
+    Args:
+        movies: movie_list from find_distance
+    
+    Returns:
+        Sorted list
+    '''
     print('Sorting..', flush=True)
     start = time.time()
 
@@ -152,14 +187,5 @@ def sort_distances(movies: tuple) -> tuple:
     return sorted(list(movies), key = lambda x: x[1])[:10]
 
 
-
 if __name__ == '__main__':
-    # print(sort_distances(find_distance((34.0536909, -118.242766), find_coords(find_all_movies(2015)))))
-    # import doctest
-    movies_2015 = find_all_movies(2015)
-    # print(sort_by_country((49.839684, 24.029716), movies_2015))
-    print(sort_by_country((40.712776, -74.005974), movies_2015))
-    # print(doctest.testmod())
-    # print(movies_2015)
-   # print(find_coords(movies_2015))
-    #print(find_all_movies(2006))
+    pass

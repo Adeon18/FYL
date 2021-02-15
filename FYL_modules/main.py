@@ -1,3 +1,6 @@
+'''
+The main script which also contains input management and map_generation
+'''
 import folium
 from folium.plugins import MarkerCluster
 
@@ -6,7 +9,10 @@ from calculations import *
 
 def read_input() -> tuple():
     '''
-    Read the user input and check for input correction
+    Read the user input and check for input correction.
+
+    Returns:
+        A tuple with all of the data
     '''
     try:
         year = int(input("Please enter a year you would like to have a map for: "))
@@ -20,7 +26,15 @@ def read_input() -> tuple():
 
 def load_map(year: int, user_location: tuple, closest_10: list):
     '''
-    Loads the map with the user location
+    Loads the map with the user location.
+
+    Args:
+        year: User year
+        user_location: User coordinates
+        closest_10: Closest 10 movies
+    
+    Returns:
+        Map name and saves the map with all of the data
     '''
     mapp = folium.Map(location=user_location)
 
@@ -53,10 +67,12 @@ def load_map(year: int, user_location: tuple, closest_10: list):
     mapp.add_child(folium.LayerControl())
     mapp.save(f'{year}_movies_map.html')
 
+    return f'{year}_movies_map.html'
+
 
 def main():
     '''
-    The main function
+    The main function which unites everything
     '''
     data = read_input()
     year, coords, opt = data[0], data[1], data[2]
@@ -68,8 +84,8 @@ def main():
         print("Wrong input")
         return
     # print(closest_10)
-    load_map(year, coords, closest_10)
-
+    map_name = load_map(year, coords, closest_10)
+    print(f"Finished, look at {map_name}")
 
 
 main()
