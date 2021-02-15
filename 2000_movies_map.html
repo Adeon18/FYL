@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87056c2e0ff649dfa8c204153efbb10a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_87056c2e0ff649dfa8c204153efbb10a" ></div>
+        
+</body>
+<script>    
+    
+            var map_87056c2e0ff649dfa8c204153efbb10a = L.map(
+                "map_87056c2e0ff649dfa8c204153efbb10a",
+                {
+                    center: [49.925259, 23.568661],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_821df25e5f6e4ea09c56923e436362fd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_87056c2e0ff649dfa8c204153efbb10a);
+        
+    
+            var marker_cluster_587d9888713f4adeba02eca3fa01dec0 = L.markerClusterGroup(
+                {}
+            );
+            map_87056c2e0ff649dfa8c204153efbb10a.addLayer(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+            var marker_8d320d810ccd4ff6b04c15d2e9c91bcb = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_d7aaa658b8b446e3b01b040173ff211c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebc7ed9a42834113905e797ff2a73378 = $(`<div id="html_ebc7ed9a42834113905e797ff2a73378" style="width: 100.0%; height: 100.0%;">"Die Story" (2000) {Zerrissene Ukraine}</div>`)[0];
+            popup_d7aaa658b8b446e3b01b040173ff211c.setContent(html_ebc7ed9a42834113905e797ff2a73378);
+        
+
+        marker_8d320d810ccd4ff6b04c15d2e9c91bcb.bindPopup(popup_d7aaa658b8b446e3b01b040173ff211c)
+        ;
+
+        
+    
+    
+            var marker_259e815b15f24a78b8f867fa355dad07 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_752ae805e560479eb24239c5771df5bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c052c809641046c4961f3edc224e01bc = $(`<div id="html_c052c809641046c4961f3edc224e01bc" style="width: 100.0%; height: 100.0%;">"Blyustiteli poroka" (2000)</div>`)[0];
+            popup_752ae805e560479eb24239c5771df5bc.setContent(html_c052c809641046c4961f3edc224e01bc);
+        
+
+        marker_259e815b15f24a78b8f867fa355dad07.bindPopup(popup_752ae805e560479eb24239c5771df5bc)
+        ;
+
+        
+    
+    
+            var marker_1c5214be47c041739acc85eadb1d2443 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_39410f9823be4b009b2536505b58e286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7c009c6ea0a46e38ba5dd2cf2e94881 = $(`<div id="html_f7c009c6ea0a46e38ba5dd2cf2e94881" style="width: 100.0%; height: 100.0%;">Black Sea Raid (2000)</div>`)[0];
+            popup_39410f9823be4b009b2536505b58e286.setContent(html_f7c009c6ea0a46e38ba5dd2cf2e94881);
+        
+
+        marker_1c5214be47c041739acc85eadb1d2443.bindPopup(popup_39410f9823be4b009b2536505b58e286)
+        ;
+
+        
+    
+    
+            var marker_d0ef88fcc36d4ea1a6a97d00f3185299 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_c058b13e43e7476a80d2489b91c931b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c67c0510dec44407a5302eabca22bd3e = $(`<div id="html_c67c0510dec44407a5302eabca22bd3e" style="width: 100.0%; height: 100.0%;">"Die Story" (2000) {Zerrissene Ukraine}</div>`)[0];
+            popup_c058b13e43e7476a80d2489b91c931b6.setContent(html_c67c0510dec44407a5302eabca22bd3e);
+        
+
+        marker_d0ef88fcc36d4ea1a6a97d00f3185299.bindPopup(popup_c058b13e43e7476a80d2489b91c931b6)
+        ;
+
+        
+    
+    
+            var marker_8954b66876834673a71251054d8fd599 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_0945d4231ca34bd28bf52baf9b7a3b9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_032838f8ea8a44d08e69fd4bc7d5995e = $(`<div id="html_032838f8ea8a44d08e69fd4bc7d5995e" style="width: 100.0%; height: 100.0%;">Donald and Luba: A Family Movie (2000)</div>`)[0];
+            popup_0945d4231ca34bd28bf52baf9b7a3b9f.setContent(html_032838f8ea8a44d08e69fd4bc7d5995e);
+        
+
+        marker_8954b66876834673a71251054d8fd599.bindPopup(popup_0945d4231ca34bd28bf52baf9b7a3b9f)
+        ;
+
+        
+    
+    
+            var marker_3d19a02b286b4c198260b90d498c6e4c = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_6ef35c82d0844d3ca554c4828f8b3a30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_079d38c27aab4b1289d9ea4d1657c1c2 = $(`<div id="html_079d38c27aab4b1289d9ea4d1657c1c2" style="width: 100.0%; height: 100.0%;">Eisenstein (2000)</div>`)[0];
+            popup_6ef35c82d0844d3ca554c4828f8b3a30.setContent(html_079d38c27aab4b1289d9ea4d1657c1c2);
+        
+
+        marker_3d19a02b286b4c198260b90d498c6e4c.bindPopup(popup_6ef35c82d0844d3ca554c4828f8b3a30)
+        ;
+
+        
+    
+    
+            var marker_1cd3ead7d800418593a7aa98eb8b80fb = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_e90a807ea9b64615b1d9761d844c9a90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_656351ce818f425fb2ead86d5f84e27b = $(`<div id="html_656351ce818f425fb2ead86d5f84e27b" style="width: 100.0%; height: 100.0%;">"Die Story" (2000) {Zerrissene Ukraine}</div>`)[0];
+            popup_e90a807ea9b64615b1d9761d844c9a90.setContent(html_656351ce818f425fb2ead86d5f84e27b);
+        
+
+        marker_1cd3ead7d800418593a7aa98eb8b80fb.bindPopup(popup_e90a807ea9b64615b1d9761d844c9a90)
+        ;
+
+        
+    
+    
+            var marker_9caa8ba5242d4f848cbc0e536f812693 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_1c7e50cd5b384464a7d58532a4a76fff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb487ec76c84ed793372be827e51954 = $(`<div id="html_cbb487ec76c84ed793372be827e51954" style="width: 100.0%; height: 100.0%;">"Blyustiteli poroka" (2000) {Obratniy effekt (#1.1)}</div>`)[0];
+            popup_1c7e50cd5b384464a7d58532a4a76fff.setContent(html_cbb487ec76c84ed793372be827e51954);
+        
+
+        marker_9caa8ba5242d4f848cbc0e536f812693.bindPopup(popup_1c7e50cd5b384464a7d58532a4a76fff)
+        ;
+
+        
+    
+    
+            var marker_2545b668e9344fb3aa685256854aca65 = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_0d9069b3bdd14afb890bf1240fa13048 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_134babbf79824932a054281ca46ccf1e = $(`<div id="html_134babbf79824932a054281ca46ccf1e" style="width: 100.0%; height: 100.0%;">"Blyustiteli poroka" (2000)</div>`)[0];
+            popup_0d9069b3bdd14afb890bf1240fa13048.setContent(html_134babbf79824932a054281ca46ccf1e);
+        
+
+        marker_2545b668e9344fb3aa685256854aca65.bindPopup(popup_0d9069b3bdd14afb890bf1240fa13048)
+        ;
+
+        
+    
+    
+            var marker_c5ed70445f9f4208bd9dfb82e815592c = L.marker(
+                [49.4871968, 31.2718321],
+                {}
+            ).addTo(marker_cluster_587d9888713f4adeba02eca3fa01dec0);
+        
+    
+        var popup_4a3d0192df6140049b60d9402214f581 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9fc3f7e5fc14fc2b3d03512f858eb36 = $(`<div id="html_f9fc3f7e5fc14fc2b3d03512f858eb36" style="width: 100.0%; height: 100.0%;">"Blyustiteli poroka" (2000) {Obratniy effekt (#1.1)}</div>`)[0];
+            popup_4a3d0192df6140049b60d9402214f581.setContent(html_f9fc3f7e5fc14fc2b3d03512f858eb36);
+        
+
+        marker_c5ed70445f9f4208bd9dfb82e815592c.bindPopup(popup_4a3d0192df6140049b60d9402214f581)
+        ;
+
+        
+    
+    
+            var feature_group_b6105a1adf2b4af8954b9c462fd67b60 = L.featureGroup(
+                {}
+            ).addTo(map_87056c2e0ff649dfa8c204153efbb10a);
+        
+    
+            var circle_marker_00f99dae2e9c45a08ab5bd910c957666 = L.circleMarker(
+                [49.925259, 23.568661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b6105a1adf2b4af8954b9c462fd67b60);
+        
+    
+        var popup_55d542f6331f410ab1c87173864d05ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afda261c6c494c1085b375e59def58a6 = $(`<div id="html_afda261c6c494c1085b375e59def58a6" style="width: 100.0%; height: 100.0%;">Your set location</div>`)[0];
+            popup_55d542f6331f410ab1c87173864d05ce.setContent(html_afda261c6c494c1085b375e59def58a6);
+        
+
+        circle_marker_00f99dae2e9c45a08ab5bd910c957666.bindPopup(popup_55d542f6331f410ab1c87173864d05ce)
+        ;
+
+        
+    
+    
+            var layer_control_cefe64b9b94d4499bf4983985d289246 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_821df25e5f6e4ea09c56923e436362fd,
+                },
+                overlays :  {
+                    "macro_element_587d9888713f4adeba02eca3fa01dec0" : marker_cluster_587d9888713f4adeba02eca3fa01dec0,
+                    "User" : feature_group_b6105a1adf2b4af8954b9c462fd67b60,
+                },
+            };
+            L.control.layers(
+                layer_control_cefe64b9b94d4499bf4983985d289246.base_layers,
+                layer_control_cefe64b9b94d4499bf4983985d289246.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_87056c2e0ff649dfa8c204153efbb10a);
+        
+</script>

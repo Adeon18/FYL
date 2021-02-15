@@ -5,7 +5,7 @@ def read_file(file_path='data/short.list'):
     with open(file_path, 'r', encoding="utf8", errors='ignore') as file:
         data = file.read().split('\n')[14:-1]
     
-    return data
+    return tuple(set(data))
 
 
 #print(read_file())
